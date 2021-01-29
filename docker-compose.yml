@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+
+  hermod:
+    container_name: hermod
+    build: .
+    image: com.sciencevikinglabs.hermod
+    ports:
+      - "9000:8080"
+    stdin_open: true
+    tty: true

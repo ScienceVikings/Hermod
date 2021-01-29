@@ -38,7 +38,7 @@ namespace Hermod.Core
         
         private static void ConfigureServicesInternal(IServiceCollection services)
         {
-            services.AddHostedService<HermodService>();
+            services.AddTransient<HermodApplication>();
             services.AddHttpClient();
 
             services.AddTransient<IFeedProvider, FeedProvider>();

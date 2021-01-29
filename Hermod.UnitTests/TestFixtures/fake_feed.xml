@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Science Viking Labs Blog</title>
+    <description>Beards and Code.</description>
+    <link>http://www.sciencevikinglabs.com/</link>
+    <atom:link href="http://www.sciencevikinglabs.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 28 Jan 2021 03:37:13 +0000</pubDate>
+    <lastBuildDate>Thu, 28 Jan 2021 03:37:13 +0000</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>LeetCode Problem 1 - Two Sum</title>
+        <description>Check out my LeetCode Solution</description>
+        <pubDate>Tue, 26 Jan 2021 00:00:00 +0000</pubDate>
+        <link>http://www.sciencevikinglabs.com/leet-code-problem-1/</link>
+        <guid isPermaLink="true">http://www.sciencevikinglabs.com/leet-code-problem-1/</guid>
+        
+        
+        <category>leetcode</category>
+        
+        <category>testing</category>
+        
+      </item>
+    
+      <item>
+        <title>Hack The Box - Omni Writeup</title>
+        <description>Omni heck the box writeup</description>
+        <pubDate>Sat, 09 Jan 2021 06:00:00 +0000</pubDate>
+        <link>http://www.sciencevikinglabs.com/HTB-Omni-Writeup/</link>
+        <guid isPermaLink="true">http://www.sciencevikinglabs.com/HTB-Omni-Writeup/</guid>
+        
+        
+        <category>Security</category>
+        
+        <category>CTF</category>
+        
+        <category>HTB"</category>
+        
+      </item>
+    
+      <item>
+        <title>Blazor Code Snippet Component with Highlight JS</title>
+        <description>Neat blazor component</description>
+        <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+        <link>http://www.sciencevikinglabs.com/blazor-code-snippet-highlightjs/</link>
+        <guid isPermaLink="true">http://www.sciencevikinglabs.com/blazor-code-snippet-highlightjs/</guid>
+        
+        
+        <category>Blazor</category>
+        
+        <category>JSInterop</category>
+        
+        <category>components</category>
+        
+        <category>highlight</category>
+        
+        <category>js</category>
+        
+      </item>
+    
+      <item>
+        <title>Hack The Box - OpenKeyS Writeup</title>
+        <description>heck da box openkeys</description>
+        <pubDate>Sat, 12 Dec 2020 06:00:00 +0000</pubDate>
+        <link>http://www.sciencevikinglabs.com/HTB-OpenKeyS-Writeup/</link>
+        <guid isPermaLink="true">http://www.sciencevikinglabs.com/HTB-OpenKeyS-Writeup/</guid>
+        
+        
+        <category>Security</category>
+        
+        <category>CTF</category>
+        
+        <category>HTB"</category>
+        
+      </item>
+    
+      <item>
+        <title>Hosting a Blazor WASM site in AWS Serverless</title>
+        <description>Blazor WASM in AWS tiiiiime</description>
+        <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+        <link>http://www.sciencevikinglabs.com/blazor-aws-serverless/</link>
+        <guid isPermaLink="true">http://www.sciencevikinglabs.com/blazor-aws-serverless/</guid>
+        
+        
+        <category>Blazor</category>
+        
+        <category>Serverless</category>
+        
+        <category>AWS</category>
+        
+        <category>WASM</category>
+        
+      </item>
+    
+      <item>
+        <title>Hack The Box - SneakyMailer Writeup</title>
+        <description>SneakyMailer</description>
+        <pubDate>Sat, 28 Nov 2020 06:00:00 +0000</pubDate>
+        <link>http://www.sciencevikinglabs.com/HTB-SneakyMailer-Writeup/</link>
+        <guid isPermaLink="true">http://www.sciencevikinglabs.com/HTB-SneakyMailer-Writeup/</guid>
+        
+        
+        <category>Security</category>
+        
+        <category>CTF</category>
+        
+        <category>HTB"</category>
+        
+      </item>
+    
+      <item>
+        <title>Hack The Box - Buff Writeup</title>
+        <description>Buff Writeup Bro</description>
+        <pubDate>Sat, 21 Nov 2020 06:00:00 +0000</pubDate>
+        <link>http://www.sciencevikinglabs.com/HTB-Buff-Writeup/</link>
+        <guid isPermaLink="true">http://www.sciencevikinglabs.com/HTB-Buff-Writeup/</guid>
+        
+        
+        <category>Security</category>
+        
+        <category>CTF</category>
+        
+        <category>HTB"</category>
+        
+      </item>
+    
+  </channel>
+</rss>
