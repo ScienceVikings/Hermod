@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Science Viking Labs Blog</title>
+    <description>Beards and Code.</description>
+    <link>http://www.sciencevikinglabs.com/</link>
+    <atom:link href="http://www.sciencevikinglabs.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 28 Jan 2021 03:37:13 +0000</pubDate>
+    <lastBuildDate>Thu, 28 Jan 2021 03:37:13 +0000</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>LeetCode Problem 1 - Two Sum</title>
+        <description>&lt;h2 id="leetcode-problem-1---two-sum"&gt;LeetCode Problem 1 - Two Sum&lt;/h2&gt; &lt;p&gt;Today we’re going to be sharpening the axe a bit and doing the first &lt;a href="https://leetcode.com/problems/two-sum/"&gt;LeetCode&lt;/a&gt; problem. You can find my code for all my LeetCode submissions at &lt;a href="https://github.com/jbasinger/LeetCode"&gt;GitHub&lt;/a&gt;.&lt;/p&gt; &lt;p&gt;&lt;a href="https://leetcode.com/"&gt;LeetCode&lt;/a&gt; is a site that provides programming problems for practice. A lot of developers use it to hone their skills or to practice for upcoming interviews. The questions available are used by large tech companies as interview questions, so it’s a good place to start and the difficulty of the questions being Easy, Medium or Hard.&lt;/p&gt; &lt;p&gt;While the solutions for these problems...</description>
+        <pubDate>Tue, 26 Jan 2021 00:00:00 +0000</pubDate>
+        <link>http://www.sciencevikinglabs.com/leet-code-problem-1/</link>
+        <guid isPermaLink="true">http://www.sciencevikinglabs.com/leet-code-problem-1/</guid>
+        
+        
+        <category>leetcode</category>
+        
+        <category>testing</category>
+        
+      </item>
+    
+      <item>
+        <title>Hack The Box - Omni Writeup</title>
+        <description>&lt;p&gt;&lt;em&gt;&lt;a href="https://hackthebox.eu"&gt;Hack The Box&lt;/a&gt; is an online platform allowing you to test your penetration testing skills and exchange ideas and methodologies with thousands of people in the security field.&lt;/em&gt;&lt;br /&gt; &lt;img src="../images/HTB-Omni/Header.png" alt="Header" /&gt;&lt;/p&gt; &lt;p&gt;Omni is an Easy level “Other” machine. Boxes typically fall under the “Linux” or “Windows” category, so this deviation from the norm should lead to a fun and interesting challenge. Based on the creator and community statistics, this box has a decent balance across all areas, but leaning slightly more towards realistic configurations exploited with existing CVEs.&lt;br /&gt; &lt;img src="../images/HTB-Omni/Statistics.png" alt="Statistics" /&gt;&lt;/p&gt; &lt;h2 id="information-gathering"&gt;Information Gathering&lt;/h2&gt; &lt;h4...</description>
+        <pubDate>Sat, 09 Jan 2021 06:00:00 +0000</pubDate>
+        <link>http://www.sciencevikinglabs.com/HTB-Omni-Writeup/</link>
+        <guid isPermaLink="true">http://www.sciencevikinglabs.com/HTB-Omni-Writeup/</guid>
+        
+        
+        <category>Security</category>
+        
+        <category>CTF</category>
+        
+        <category>HTB"</category>
+        
+      </item>
+    
+      <item>
+        <title>Blazor Code Snippet Component with Highlight JS</title>
+        <description>&lt;h2 id="make-a-code-snippet-component-in-blazor-using-highlight-js"&gt;Make a Code Snippet component in Blazor using Highlight JS&lt;/h2&gt; &lt;p&gt;Today I want to show you how to sprinkle some javascript in your Blazor components by making a code snippet component using &lt;a href="https://highlightjs.org/"&gt;highlight.js&lt;/a&gt;. Highlight.js is a syntax highlighting tool that is available for 191 different languages with 97 different styles. I’ve used it before with C# and it works very well and the styles are great and it helps making this component extraordinarily simple.&lt;/p&gt; &lt;h3 id="initializing-the-javascript"&gt;Initializing the Javascript&lt;/h3&gt; &lt;p&gt;First thing we’re going to need to do is setup the Javascript. &lt;a href="https://highlightjs.org/"&gt;Highlight.js&lt;/a&gt; Lets you include just the languages...</description>
+        <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+        <link>http://www.sciencevikinglabs.com/blazor-code-snippet-highlightjs/</link>
+        <guid isPermaLink="true">http://www.sciencevikinglabs.com/blazor-code-snippet-highlightjs/</guid>
+        
+        
+        <category>Blazor</category>
+        
+        <category>JSInterop</category>
+        
+        <category>components</category>
+        
+        <category>highlight</category>
+        
+        <category>js</category>
+        
+      </item>
+    
+      <item>
+        <title>Hack The Box - OpenKeyS Writeup</title>
+        <description>&lt;p&gt;&lt;em&gt;&lt;a href="https://hackthebox.eu"&gt;Hack The Box&lt;/a&gt; is an online platform allowing you to test your penetration testing skills and exchange ideas and methodologies with thousands of people in the security field.&lt;/em&gt;&lt;br /&gt; &lt;img src="../images/HTB-OpenKeyS/Header.png" alt="Header" /&gt;&lt;/p&gt; &lt;p&gt;OpenKeyS is a Medium level OpenBSD machine. Based on the community statistics, it looks like we’ll be focusing primarily on leveraging existing CVEs. &lt;img src="../images/HTB-OpenKeyS/Statistics.png" alt="Statistics" /&gt;&lt;/p&gt; &lt;h2 id="information-gathering"&gt;Information Gathering&lt;/h2&gt; &lt;h4 id="nmap"&gt;Nmap:&lt;/h4&gt; &lt;p&gt;By scanning the target IP with Nmap, we’re able to find what ports are open (&lt;code class="language-plaintext highlighter-rouge"&gt;-p&lt;/code&gt;), while fingerprinting the services running and their versions (&lt;code class="language-plaintext highlighter-rouge"&gt;-sV&lt;/code&gt;). We’re also running the default...</description>
+        <pubDate>Sat, 12 Dec 2020 06:00:00 +0000</pubDate>
+        <link>http://www.sciencevikinglabs.com/HTB-OpenKeyS-Writeup/</link>
+        <guid isPermaLink="true">http://www.sciencevikinglabs.com/HTB-OpenKeyS-Writeup/</guid>
+        
+        
+        <category>Security</category>
+        
+        <category>CTF</category>
+        
+        <category>HTB"</category>
+        
+      </item>
+    
+      <item>
+        <title>Hosting a Blazor WASM site in AWS Serverless</title>
+        <description>&lt;h2 id="someone-put-their-ms-in-my-aws"&gt;Someone put their MS in my AWS!&lt;/h2&gt; &lt;p&gt;Today, we’re going to get a WASM version of Blazor up and running as a serverless site in AWS. To do this, we’ll be building off of my last post about using &lt;a href="https://sciencevikinglabs.com/simple-cloud-formation/"&gt;CloudFormation&lt;/a&gt;. We’ll tackle this big task with the following steps:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Build a CloudFormation stack that will contain: &lt;ul&gt; &lt;li&gt;A CodeBuild project&lt;/li&gt; &lt;li&gt;A S3 Bucket to hold our static site&lt;/li&gt; &lt;li&gt;A CloudFront Distribution to serve up our site from S3&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;li&gt;Create a Blazor - WASM project in Visual Studio&lt;/li&gt; &lt;li&gt;Create Dockerfile and docker-compose.yml files to build and...</description>
+        <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+        <link>http://www.sciencevikinglabs.com/blazor-aws-serverless/</link>
+        <guid isPermaLink="true">http://www.sciencevikinglabs.com/blazor-aws-serverless/</guid>
+        
+        
+        <category>Blazor</category>
+        
+        <category>Serverless</category>
+        
+        <category>AWS</category>
+        
+        <category>WASM</category>
+        
+      </item>
+    
+      <item>
+        <title>Hack The Box - SneakyMailer Writeup</title>
+        <description>&lt;p&gt;&lt;em&gt;&lt;a href="https://hackthebox.eu"&gt;Hack The Box&lt;/a&gt; is an online platform allowing you to test your penetration testing skills and exchange ideas and methodologies with thousands of people in the security field.&lt;/em&gt;&lt;br /&gt; &lt;img src="../images/HTB-SneakyMailer/Header.png" alt="Header" /&gt;&lt;/p&gt; &lt;p&gt;SneakyMailer is a Medium level Linux machine. The box creator graded the machine pretty heavily in the “Real” and “CVE” categories, but community statistics show a good mix across all areas. It should be an interesting box.&lt;br /&gt; &lt;img src="../images/HTB-SneakyMailer/Statistics.png" alt="Statistics" /&gt;&lt;/p&gt; &lt;h2 id="information-gathering"&gt;Information Gathering&lt;/h2&gt; &lt;h4 id="nmap"&gt;Nmap:&lt;/h4&gt; &lt;p&gt;By scanning the target IP with Nmap, we’re able to find what ports are open (&lt;code class="language-plaintext highlighter-rouge"&gt;-p&lt;/code&gt;), while...</description>
+        <pubDate>Sat, 28 Nov 2020 06:00:00 +0000</pubDate>
+        <link>http://www.sciencevikinglabs.com/HTB-SneakyMailer-Writeup/</link>
+        <guid isPermaLink="true">http://www.sciencevikinglabs.com/HTB-SneakyMailer-Writeup/</guid>
+        
+        
+        <category>Security</category>
+        
+        <category>CTF</category>
+        
+        <category>HTB"</category>
+        
+      </item>
+    
+      <item>
+        <title>Hack The Box - Buff Writeup</title>
+        <description>&lt;p&gt;&lt;em&gt;&lt;a href="https://hackthebox.eu"&gt;Hack The Box&lt;/a&gt; is an online platform allowing you to test your penetration testing skills and exchange ideas and methodologies with thousands of people in the security field.&lt;/em&gt;&lt;br /&gt; &lt;img src="../images/HTB-Buff/Header.png" alt="HTB - Buff" /&gt;&lt;/p&gt; &lt;p&gt;Buff is an Easy level Windows machine. The box statistics show us that we will be focusing heavily on existing CVEs, while working on enumeration skills in a somewhat realistic setup.&lt;br /&gt; &lt;img src="../images/HTB-Buff/Statistics.png" alt="Buff Statistics" /&gt;&lt;/p&gt; &lt;h2 id="information-gathering"&gt;Information Gathering&lt;/h2&gt; &lt;h4 id="nmap"&gt;Nmap:&lt;/h4&gt; &lt;p&gt;By scanning the tartget IP with Nmap, we’re able to find what ports are open, while fingerprinting the services running and their...</description>
+        <pubDate>Sat, 21 Nov 2020 06:00:00 +0000</pubDate>
+        <link>http://www.sciencevikinglabs.com/HTB-Buff-Writeup/</link>
+        <guid isPermaLink="true">http://www.sciencevikinglabs.com/HTB-Buff-Writeup/</guid>
+        
+        
+        <category>Security</category>
+        
+        <category>CTF</category>
+        
+        <category>HTB"</category>
+        
+      </item>
+    
+      <item>
+        <title>Building a File Integrity Monitor - Part 4</title>
+        <description>&lt;p&gt;In our &lt;a href="http://sciencevikinglabs.com/building-a-file-integrity-monitor-part3/"&gt;previous&lt;/a&gt; post, we created a database to store all our information and added a config file to read variables from. In this post, we’ll build off that config file while incorporating email alerts when changes are detected.&lt;/p&gt; &lt;h2 id="update-the-config-file"&gt;Update the Config File&lt;/h2&gt; &lt;p&gt;Because we’ve already done most of the groundwork, we’ll be Keeping this post fairly short and simple. Setting an email account and where to send our alerts is the perfect opportunity to use the configuration file we created previously.&lt;/p&gt; &lt;script src="https://gist.github.com/RBoutot/e664be73bbb83995c8c6dc15c1d5c8f9.js?file=FileIntegrityMonitor.INI"&gt;&lt;/script&gt; &lt;h4 id="walk-through"&gt;Walk-through:&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;&lt;strong&gt;Line 4&lt;/strong&gt;: Here we’re defining the &lt;code class="language-plaintext highlighter-rouge"&gt;Email&lt;/code&gt; section of...</description>
+        <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+        <link>http://www.sciencevikinglabs.com/building-a-file-integrity-monitor-part4/</link>
+        <guid isPermaLink="true">http://www.sciencevikinglabs.com/building-a-file-integrity-monitor-part4/</guid>
+        
+        
+        <category>Security</category>
+        
+        <category>Python</category>
+        
+        <category>"File</category>
+        
+        <category>Integrity</category>
+        
+        <category>Monitor"</category>
+        
+      </item>
+    
+      <item>
+        <title>Simple Cloud Formation</title>
+        <description>&lt;h1 id="simple-cloud-formation"&gt;Simple Cloud Formation&lt;/h1&gt; &lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt; &lt;p&gt;Today I’d like to talk a little bit about infrastructure as code. Infrastructure as code is when you write code to manage your cloud infrastructure. Having your infrastructure set up as code does wonders for your development cycle. The one thing I like the most about it, is that when you make a setting change, you can commit it. No more looking back at the resource settings and trying to figure out the magic checkbox you clicked last week that made things work in QA so you can reproduce it in Production. You just...</description>
+        <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
+        <link>http://www.sciencevikinglabs.com/simple-cloud-formation/</link>
+        <guid isPermaLink="true">http://www.sciencevikinglabs.com/simple-cloud-formation/</guid>
+        
+        
+        <category>AWS</category>
+        
+        <category>CloudFormation</category>
+        
+        <category>CodeBuild</category>
+        
+      </item>
+    
+      <item>
+        <title>Building a File Integrity Monitor - Part 3</title>
+        <description>&lt;p&gt;Hopefully you’re caught up with our &lt;a href="http://sciencevikinglabs.com/building-a-file-integrity-monitor-part2/"&gt;previous&lt;/a&gt; post, where we upgraded the hashing and added a way to collect the bytes of our files. In this post, we’ll be starting to clean up the code, as well as implementing a database and config file to be used for the remainder of the project. &lt;em&gt;NOTE: Due to the depreciation of Python 2.7, we’ve swapped to Python3. The updated code is near identical except for print commands&lt;/em&gt;&lt;/p&gt; &lt;h2 id="configure-the-database"&gt;Configure the Database&lt;/h2&gt; &lt;p&gt;In the current state of the code, every file, hash, and byte are all being held in memory while the...</description>
+        <pubDate>Mon, 05 Oct 2020 00:00:00 +0000</pubDate>
+        <link>http://www.sciencevikinglabs.com/building-a-file-integrity-monitor-part3/</link>
+        <guid isPermaLink="true">http://www.sciencevikinglabs.com/building-a-file-integrity-monitor-part3/</guid>
+        
+        
+        <category>Security</category>
+        
+        <category>Python</category>
+        
+        <category>"File</category>
+        
+        <category>Integrity</category>
+        
+        <category>Monitor"</category>
+        
+      </item>
+    
+  </channel>
+</rss>
