@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Hermod.Core;
+using Hermod.Core.Models;
 using Hermod.Core.Services;
 using Microsoft.Extensions.DependencyInjection;
 using NUnit.Framework;
@@ -14,28 +15,30 @@ namespace Hermod.UnitTests
     {
 
         private IRssReaderService _srv;
-        private Uri _realFeed;
-
+        RssFeedItem _post = new RssFeedItem()
+        {
+            Link = "whatever"
+        };
+        
         [SetUp]
         public void SetUp()
         {
             var hermod = TestHost.GetHost();
             var services = hermod.HostBuilder.Build().Services;
             _srv = services.GetService<IRssReaderService>();
-            _realFeed = new Uri(Path.Join(Directory.GetCurrentDirectory(), "TestFixtures/real_feed.xml"));
         }
         
         [Test]
         public async Task ShouldReturnCorrectNumberOfItems()
         {
-            var res = await _srv.GetRssFeedItemsAsync(_realFeed);
-            res.Count().ShouldBe(10);
+            var res = await _srv.GetRssFeedItemsAsync();
+            res.Count().ShouldBe(7);
         }
 
         [Test]
         public async Task ShouldFillDataOfItems()
         {
-            var res = await _srv.GetRssFeedItemsAsync(_realFeed);
+            var res = await _srv.GetRssFeedItemsAsync();
             res.Count().ShouldBeGreaterThan(0);
             foreach (var item in res)
             {
@@ -43,6 +46,25 @@ namespace Hermod.UnitTests
                 item.Title.ShouldNotBeNullOrWhiteSpace();
                 item.Link.ShouldNotBeNullOrWhiteSpace();
             }
+        }
+        
+        [Test]
+        public void ShouldReturnFalseOnNull()
+        {
+            (_post == null).ShouldBeFalse();
+        }
+        
+        [Test]
+        public void ShouldReturnTrueOnSameObject()
+        {
+            _post.Equals(_post).ShouldBeTrue();
+        }
+
+        [Test]
+        public void ShouldReturnFalseOnDifferentString()
+        {
+            _post.Equals("whatever").ShouldBeTrue();
+            _post.Equals("not whatever").ShouldBeFalse();
         }
     }
 }

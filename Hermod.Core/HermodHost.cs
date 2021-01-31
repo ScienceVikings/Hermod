@@ -1,5 +1,8 @@
 ﻿using System;
+using Amazon.S3;
 using Hermod.Core.Services;
+using Hermod.Core.Settings;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -11,9 +14,11 @@ namespace Hermod.Core
         
         private IHostBuilder _hostBuilder;
         private readonly string[] _hostArguments;
-
-        public Action<IServiceCollection> ConfigureServices { get; set; }
         
+
+        public Action<HostBuilderContext, IServiceCollection> ConfigureServices { get; set; }
+        public Action<HostBuilderContext, IConfigurationBuilder> ConfigureApp { get; set; }
+
         public HermodHost(string[] args)
         {
             _hostArguments = args;
@@ -25,8 +30,14 @@ namespace Hermod.Core
                 return _hostBuilder;
             
             _hostBuilder = Host.CreateDefaultBuilder(_hostArguments)
+                .ConfigureAppConfiguration(ConfigureAppInternal)
                 .ConfigureServices(ConfigureServicesInternal);
 
+            if (ConfigureApp != null)
+            {
+                _hostBuilder.ConfigureAppConfiguration(ConfigureApp);
+            }
+            
             if (ConfigureServices != null)
             {
                 _hostBuilder.ConfigureServices(ConfigureServices);
@@ -35,14 +46,29 @@ namespace Hermod.Core
             return _hostBuilder;
 
         }
-        
-        private static void ConfigureServicesInternal(IServiceCollection services)
+
+        private void ConfigureAppInternal(HostBuilderContext context, IConfigurationBuilder config)
         {
+            //config.Sources.Clear
+            config.AddJsonFile("appsettings.json");
+        }
+        
+        private static void ConfigureServicesInternal(HostBuilderContext context, IServiceCollection services)
+        {
+
+            var config = context.Configuration;
+            
             services.AddTransient<HermodApplication>();
             services.AddHttpClient();
+            services.Configure<NotifiedPostSettings>(config.GetSection("NotifiedPostSettings"));
+            services.Configure<RssReaderSettings>(config.GetSection("RssReaderSettings"));
 
+            services.AddAWSService<IAmazonS3>();
+            
             services.AddTransient<IFeedProvider, FeedProvider>();
+            services.AddTransient<INotifiedPostsProvider, NotifiedPostsProvider>();
             services.AddTransient<IRssReaderService, RssReaderService>();
+            services.AddTransient<INewPostProvider, NewPostProvider>();
         }
     }
 }

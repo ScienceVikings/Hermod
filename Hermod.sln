@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermod.UnitTests", "Hermod.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermod", "Hermod\Hermod.csproj", "{D220758C-2271-41F9-9A05-A1A1B8801222}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermod.IntegrationTests", "Hermod.IntegrationTests\Hermod.IntegrationTests.csproj", "{5A6698BB-FDE0-4C7A-AFD2-BDB08F0023DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{D220758C-2271-41F9-9A05-A1A1B8801222}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D220758C-2271-41F9-9A05-A1A1B8801222}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D220758C-2271-41F9-9A05-A1A1B8801222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A6698BB-FDE0-4C7A-AFD2-BDB08F0023DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A6698BB-FDE0-4C7A-AFD2-BDB08F0023DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A6698BB-FDE0-4C7A-AFD2-BDB08F0023DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A6698BB-FDE0-4C7A-AFD2-BDB08F0023DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

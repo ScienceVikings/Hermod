@@ -13,5 +13,25 @@ namespace Hermod.Core.Models
         [XmlElement("link")]
         public string Link { get; set; }
         
+        public override bool Equals(object obj)
+        {
+            if (obj == null)
+                return false;
+
+            if (obj == this)
+                return true;
+
+            return obj switch
+            {
+                string _ => Link.Equals(obj),
+                RssFeedItem item => Link.Equals(item.Link),
+                _ => false
+            };
+        }
+
+        public override int GetHashCode()
+        {
+            return Link.GetHashCode();
+        }
     }
 }

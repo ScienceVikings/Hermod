@@ -9,7 +9,8 @@ namespace Hermod.UnitTests.Mocks
     {
         public Task<Stream> GetFeed(Uri uri)
         {
-            return Task.FromResult<Stream>(File.OpenRead(uri.LocalPath));
+            return Task.FromResult<Stream>(
+                File.OpenRead(Path.Join(Path.Join(Directory.GetCurrentDirectory(), uri.LocalPath))));
         }
     }
 }

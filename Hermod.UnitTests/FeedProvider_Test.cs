@@ -35,10 +35,8 @@ namespace Hermod.UnitTests
             
             var srv = services.GetService<IFeedProvider>();
             srv.ShouldNotBeNull();
-
-            var feedPath = Path.Join(Directory.GetCurrentDirectory(), "TestFixtures/real_feed.xml");
             
-            await srv.GetFeed(new Uri(feedPath)).ShouldNotBeNull();
+            await srv.GetFeed(new Uri("file://TestFixtures/real_feed.xml")).ShouldNotBeNull();
         }
     }
 }

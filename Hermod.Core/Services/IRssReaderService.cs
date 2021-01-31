@@ -8,6 +8,6 @@ namespace Hermod.Core.Services
 {
     public interface IRssReaderService
     {
-        Task<IEnumerable<RssFeedItem>> GetRssFeedItemsAsync(Uri uri);
+        Task<IEnumerable<RssFeedItem>> GetRssFeedItemsAsync();
     }
 }

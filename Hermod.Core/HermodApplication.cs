@@ -16,7 +16,7 @@ namespace Hermod.Core.Services
         
         public async Task RunAsync()
         {
-            var rssItems = await _rssReaderService.GetRssFeedItemsAsync(new Uri("https://sciencevikinglabs.com/feed.xml"));
+            var rssItems = await _rssReaderService.GetRssFeedItemsAsync();
             foreach (var item in rssItems)
             {
                 Console.WriteLine($"----- {item.Title} -----");

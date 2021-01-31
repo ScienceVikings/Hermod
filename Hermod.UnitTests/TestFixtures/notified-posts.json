@@ -1,0 +1,24 @@
+﻿{
+  "posts":[
+    {
+      "title": "LeetCode Problem 1 - Two Sum",
+      "description": "Check out my LeetCode Solution",
+      "link": "http://www.sciencevikinglabs.com/leet-code-problem-1/"
+    },
+    {
+      "title": "Hack The Box - Omni Writeup",
+      "description": "Omni heck the box writeup",
+      "link": "http://www.sciencevikinglabs.com/HTB-Omni-Writeup/"
+    },
+    {
+      "title": "Blazor Code Snippet Component with Highlight JS",
+      "description": "Neat blazor component",
+      "link": "http://www.sciencevikinglabs.com/blazor-code-snippet-highlightjs/"
+    },
+    {
+      "title": "Hack The Box - OpenKeyS Writeup",
+      "description": "heck da box openkeys",
+      "link": "http://www.sciencevikinglabs.com/HTB-OpenKeyS-Writeup/"
+    }
+  ]
+}
