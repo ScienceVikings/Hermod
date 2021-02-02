@@ -13,7 +13,8 @@ namespace Hermod.Core.Services
     {
         private readonly IFeedProvider _feedProvider;
         private readonly RssReaderSettings _settings;
-
+        private RssFeed _feed = null;
+        
         public RssReaderService(IFeedProvider feedProvider, IOptions<RssReaderSettings> settings)
         {
             _feedProvider = feedProvider;
@@ -22,13 +23,14 @@ namespace Hermod.Core.Services
         
         public async Task<IEnumerable<RssFeedItem>> GetRssFeedItemsAsync()
         {
+            if (_feed != null)
+                return _feed.Channel.Items;
+                    
             var xmlStream = await _feedProvider.GetFeed(new Uri(_settings.FeedUrl));
-            
             var serializer = new XmlSerializer(typeof(RssFeed));
-            
-            var feed = (RssFeed)serializer.Deserialize(xmlStream);
+            _feed = (RssFeed)serializer.Deserialize(xmlStream);
 
-            return feed == null ? new List<RssFeedItem>() : feed.Channel.Items;
+            return _feed == null ? new List<RssFeedItem>() : _feed.Channel.Items;
         }
     }
 }

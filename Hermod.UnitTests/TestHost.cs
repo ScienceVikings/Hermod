@@ -25,8 +25,16 @@ namespace Hermod.UnitTests
                     serviceCollection.Remove(postsProvider);
                 }
 
+                var postsPersister = serviceCollection.FirstOrDefault(d=>d.ServiceType == typeof(INotifiedPostsPersister));
+                if (postsPersister != null)
+                {
+                    serviceCollection.Remove(postsPersister);
+                }
+                
                 serviceCollection.AddTransient<IFeedProvider, FileFeedProvider>();
                 serviceCollection.AddTransient<INotifiedPostsProvider, FileNotifiedPostsProvider>();
+                serviceCollection.AddTransient<INotifiedPostsPersister, FileNotifiedPostsPersister>();
+                
             };
             return hermod;
         }

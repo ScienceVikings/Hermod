@@ -65,10 +65,12 @@ namespace Hermod.Core
 
             services.AddAWSService<IAmazonS3>();
             
-            services.AddTransient<IFeedProvider, FeedProvider>();
-            services.AddTransient<INotifiedPostsProvider, NotifiedPostsProvider>();
-            services.AddTransient<IRssReaderService, RssReaderService>();
-            services.AddTransient<INewPostProvider, NewPostProvider>();
+            services.AddSingleton<IFeedProvider, FeedProvider>();
+            services.AddSingleton<INotifiedPostsProvider, NotifiedPostsProvider>();
+            services.AddSingleton<IRssReaderService, RssReaderService>();
+            services.AddSingleton<INewPostProvider, NewPostProvider>();
+            services.AddSingleton<INotifiedPostsPersister, NotifiedPostsPersister>();
+            services.AddSingleton<ISocialMediaService, SocialMediaService>();
         }
     }
 }

@@ -33,5 +33,10 @@ namespace Hermod.Core.Models
         {
             return Link.GetHashCode();
         }
+
+        public override string ToString()
+        {
+            return $"{Description} ${Link}";
+        }
     }
 }

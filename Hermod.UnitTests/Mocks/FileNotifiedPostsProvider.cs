@@ -12,8 +12,8 @@ namespace Hermod.UnitTests.Mocks
         public async Task<IEnumerable<RssFeedItem>> GetNotifiedPosts()
         {
             var json = await File.ReadAllTextAsync("TestFixtures/notified-posts.json");
-            var file = JsonConvert.DeserializeObject<NotifiedPostFile>(json);
-            return file.Posts;
+            var feed = JsonConvert.DeserializeObject<RssFeed>(json);
+            return feed.Channel.Items;
         }
     }
 }

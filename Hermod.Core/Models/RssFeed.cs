@@ -3,6 +3,7 @@
 namespace Hermod.Core.Models
 {
     [XmlType("rss")]
+    
     public class RssFeed
     {
         [XmlElement("channel")]

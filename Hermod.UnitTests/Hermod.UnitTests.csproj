@@ -24,10 +24,10 @@
       <None Update="TestFixtures\fake_feed.xml">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="TestFixtures\notified-posts.json">
+      <None Update="appsettings.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="appsettings.json">
+      <None Update="TestFixtures\notified-posts-base.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>

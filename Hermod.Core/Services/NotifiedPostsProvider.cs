@@ -15,6 +15,8 @@ namespace Hermod.Core.Services
         private readonly IAmazonS3 _s3Client;
         private readonly NotifiedPostSettings _settings;
 
+        private RssFeed _posts = null;
+
         public NotifiedPostsProvider(IAmazonS3 s3Client, IOptions<NotifiedPostSettings> settings)
         {
             _s3Client = s3Client;
@@ -23,6 +25,9 @@ namespace Hermod.Core.Services
         
         public async Task<IEnumerable<RssFeedItem>> GetNotifiedPosts()
         {
+            if (_posts != null)
+                return _posts.Channel.Items;
+            
             var getRequest = new GetObjectRequest()
             {
                 BucketName = _settings.BucketName,
@@ -34,8 +39,8 @@ namespace Hermod.Core.Services
             using var reader = new StreamReader(response.ResponseStream);
             var json = await reader.ReadToEndAsync();
 
-            var file = JsonConvert.DeserializeObject<NotifiedPostFile>(json);
-            return file.Posts;
+            _posts = JsonConvert.DeserializeObject<RssFeed>(json);
+            return _posts.Channel.Items;
         }
     }
 }
